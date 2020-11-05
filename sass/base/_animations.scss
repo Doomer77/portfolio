@@ -67,3 +67,20 @@
     }
 } 
 
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+

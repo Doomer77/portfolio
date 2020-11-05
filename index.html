@@ -11,7 +11,7 @@
 <body>
 
     <!-- feedback -->
-    <section class="feedback hide fade feedback--js">
+    <section class="feedback hide fade">
         <div class="feedback__layout">
             <div class="form-box">
                 <form action="" class="form">
@@ -28,13 +28,13 @@
     </section>
 
     <!-- about -->
-    <section class="about hide fade">
+    <section class="about hide fade popup">
         <div class="about__layout">
-            <div class="about__close">
+            <div class="close">
 
             </div>
             <div class="about__info">
-                <h2 class="heading-secondary">Всем привет. Меня зовут Сергей. Я Frontend - разработчик. Имею небольшой опыт в коммерческой разработке около 5-6 месяцев. Занимался разработкой интерфейса приложения для складского учета внутри фирмы в небольшой команде разработчиков.</h2>
+                <h2 class="heading-secondary">Всем привет. Меня зовут Сергей. Я Начинающий HTML-верстальщик и Frontend - разработчик. Имею небольшой опыт в коммерческой разработке около 5-6 месяцев. Занимался разработкой интерфейса приложения для складского учета внутри фирмы в небольшой команде разработчиков.</h2>
                 <div class="about__my">
                     <h3 class="heading-tertiary heading-tertiary--mod">Обо мне</h3>
                     <div class="about__qualities-box">
@@ -116,6 +116,39 @@
         </div>
     </section>
 
+    <!-- my projects -->
+    <section class="projects hide fade popup">
+        <div class="projects__layout">
+            <div class="close">
+
+            </div>
+            <div class="projects__info">
+                <h2 class="heading-primary heading-primary--green">Мои проекты</h2>
+            </div>
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="img/img1.jpg" alt="Первый слайд" class="slider__img">
+                </div>
+            
+                <div class="slider__item">
+                    <img src="img/img2.jpg" alt="Второй слайд" class="slider__img">
+                </div>
+            
+                <div class="slider__item">
+                    <img src="img/img3.jpg" alt="Третий слайд" class="slider__img">
+                </div>
+            
+                <a class="slider__prev" onclick="minusSlide()">&#10094;</a>
+                <a class="slider__next" onclick="plusSlide()">&#10095;</a>
+            </div>
+            
+            <div class="dots">
+                <span class="dots__item" onclick="currentSlide(1)"></span> 
+                <span class="dots__item" onclick="currentSlide(2)"></span> 
+                <span class="dots__item" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+    </section>
     <!-- navigation -->
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -128,8 +161,9 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link navigation__link--js"><span>01</span>Обо мне</a></li>   
-                <li class="navigation__item"><a href="https://github.com/Doomer77" class="navigation__link"><span>02</span>GitHub</a></li> 
-                <li class="navigation__item"><a href="https://vidnoe.hh.ru/resume/b208340fff07cb0bb30039ed1f7a764a396364" class="navigation__link"><span>03</span>Резюме на HH</a></li> 
+                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--js"><span>02</span>Мои проекты</a></li>
+                <li class="navigation__item"><a href="https://github.com/Doomer77" class="navigation__link"><span>03</span>GitHub</a></li> 
+                <li class="navigation__item"><a href="https://vidnoe.hh.ru/resume/b208340fff07cb0bb30039ed1f7a764a396364" class="navigation__link"><span>04</span>Резюме на HH</a></li> 
             </ul>
          </nav>
     </div>
@@ -159,7 +193,7 @@
             <div class="text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main u-margin-bottom-small">Подгорный Сергей</span>
-                    <span class="heading-primary--sub u-margin-bottom-medium">Front-end разработчик</span>
+                    <span class="heading-primary--sub u-margin-bottom-medium">HTML-верстальщик | Front-end разработчик</span>
                 </h1>
                 <a href="#" class="btn btn--white btn--animated btn--js">Напишите мне</a>
             </div>

@@ -12,6 +12,10 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    &--green{
+        color: $color-primary; 
+        letter-spacing: 0.2rem;     
+    }
 
     &--main{
         display: block;

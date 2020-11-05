@@ -1,0 +1,11 @@
+.projects{
+  @include popup-wrapper;
+  z-index: 4000;
+    &__layout{
+      @include layout;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+    }
+}

@@ -1,63 +1,11 @@
 .about{
-    width: 100%;
-    padding: 2.5rem 0;
-    background-color: $color-black-2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3000;
-    justify-content: center;
-    align-items: center;
-
-    &__close{
-        width: 3rem;
-        height: 3rem;
-        position: absolute;
-        right: 2rem;
-        top: 2rem;
-        cursor: pointer;
-        transition: all 0.3s;
-
-        &::before{
-            content: "";
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 0.2rem;
-            background-color: $color-black;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-        }
-
-        &::after{
-            content: "";
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 0.2rem;
-            background-color: $color-black;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(135deg);
-        }
-
-        &:hover{
-            transform: scale(1.2) rotate(180deg);
-        }
-    }
-
+    @include popup-wrapper;      
     &__layout{
-        width: 90%;
+        @include layout;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
-        padding: 5rem 0;
-        border-radius: 1rem;
-        box-shadow: $shadow;
-        position: relative;
     }
 
     &__info{
@@ -108,7 +56,6 @@
     }
 
     &__skill{
-        // width: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
